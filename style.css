@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#darkModeSwitch {
+    margin-right: 10px;
+}
+
+/* History Panel Styles */
+#historyPanel {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    overflow-y: auto;
+    max-width: 300px;
+    resize: horizontal; 
+    min-width: 200px;
+}
+
+.dark-mode #historyPanel {
+    background-color: #444;
+}
+
+#historyPanel button {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#historyPanel button:hover {
+    background-color: #666;
+}
+
+/* Main Section Styles */
+#mainSection {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.dark-mode #mainSection {
+    background-color: #444;
+}
+
+#currentSeriesNameContainer {
+    margin-bottom: 20px;
+}
+
+#currentSeriesName {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.promptName,
+.promptText {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.dark-mode .promptName,
+.dark-mode .promptText {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+.promptText {
+    height: 300px; 
+    resize: vertical;
+}
+
+.promptBlock {
+    position: relative;
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.copyBtn {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copyBtn:hover {
+    background-color: #45a049;
+}
+
+#addPromptBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addPromptBtn:hover {
+    background-color: #444;
+}

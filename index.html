@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Organiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Dark Mode Toggle -->
+        <div id="darkModeToggle">
+            <input type="checkbox" id="darkModeSwitch">
+            <label for="darkModeSwitch">Dark Mode</label>
+        </div>
+
+        <!-- Prompt Series History Panel -->
+        <div id="historyPanel">
+            <button id="addSeriesBtn">Add New Series</button>
+            <div id="seriesButtons">
+                <!-- Stored prompt series buttons will be appended here -->
+            </div>
+        </div>
+
+        <!-- Main Section -->
+        <div id="mainSection">
+            <!-- Current Series Name -->
+            <div id="currentSeriesNameContainer">
+                <input type="text" id="currentSeriesName">
+            </div>
+
+            <!-- Prompt Blocks -->
+            <div class="promptBlock">
+                <input type="text" class="promptName" placeholder="Prompt Name">
+                <button class="copyBtn">Copy</button>
+                <textarea class="promptText" placeholder="Write your prompt here..."></textarea>
+            </div>
+
+            <!-- Add New Prompt Button -->
+            <button id="addPromptBtn">Add New Prompt</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
